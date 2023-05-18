@@ -1,2 +1,2 @@
 # alMatric
-alMatric is a basic alebra tool for matrices.
+## alMatric is a basic alebra tool for matrices.
