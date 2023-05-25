@@ -118,5 +118,18 @@ class alMatric():
             print("wrong order of matrix or more than 2 matrix are store")
             print(self.dispData())
             self.getData_mul()
+            
+    # GET Transpose of matrix
+    def matrixTranspose(self):
+        self.putData(div=True,trans=True)
+        mat = self.mat_transpose[0][0]
+        res = [[0 for x in range(self.mat_transpose[0][1][0])] for y in range(self.mat_transpose[0][1][1])]
 
+        for i in range(self.mat_transpose[0][1][0]):
+            for j in range(i,self.mat_transpose[0][1][1]):
+                res[j][i] = mat[i][j]
+                
+
+        self.mat_transpose.append(res)
+        self.dispData(trans=True)
 
