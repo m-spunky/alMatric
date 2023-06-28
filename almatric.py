@@ -119,4 +119,14 @@ class alMatric():
             print(self.dispData())
             self.getData_mul()
 
+    def transpose(self):
+        inp = int(input("\nIndex of Matrix : "))
+        mat = self.matrices[inp-1]
+        for i in range(self.row):
+            for j in range(i+1):
+                temp = mat[i][j]
+                mat[i][j] = mat[j][i]
+                mat[j][i] = temp
+        return mat
+
 
